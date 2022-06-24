@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+    <record id="action_show_mtnclient" model="ir.actions.act_window">
+        <field name="name">Infos transaction</field>
+        <field name="res_model">mtnclient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="show_mtnclient"
+        name="MTN Money"
+    />
+    <menuitem
+        id="show_mtnclient1"
+        name="Infos transaction"
+        parent="show_mtnclient"
+        action="action_show_mtnclient"
+        sequence="10"
+    /> 
+    <record id="mtnclient_view_form" model="ir.ui.view">
+        <field name="name">mtnclient.view.form</field>
+        <field name="model">mtnclient</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code_compte"/>
+                        </group>
+                        <group>
+                            <field name="phone_number"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="mtnclient_view_tree" model="ir.ui.view">
+        <field name="name">mtnclient.view.tree</field>
+        <field name="model">mtnclient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code_compte" optional="show" />
+                <field name="phone_number" /> 
+            </tree>
+        </field>
+    </record>
+    
+
+</odoo>

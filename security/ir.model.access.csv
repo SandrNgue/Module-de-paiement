@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access.mtnclient","access_mtnclient","model_mtnclient","base.group_user","1","1","1","1"
+"access.apimtn","access_apimtn","model_apimtn","base.group_user","1","1","1","1"
+"access.paiement","access_paiement","model_paiement","base.group_user","1","1","1","1"
