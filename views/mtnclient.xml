@@ -26,12 +26,15 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="code_compte"/>
-                        </group>
-                        <group>
                             <field name="phone_number"/>
                         </group>
+                        <group>
+                            <field name="amount"/>
+                        </group>
                     </group>
+                    <div class="oe_button" name="action">
+                        <button name="action_get_data" type="object" string="send data"/>
+                    </div>
                 </sheet>
             </form>
         </field>
@@ -42,8 +45,8 @@
         <field name="model">mtnclient</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="code_compte" optional="show" />
                 <field name="phone_number" /> 
+                <field name="amount" /> 
             </tree>
         </field>
     </record>

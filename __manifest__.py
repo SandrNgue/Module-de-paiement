@@ -13,7 +13,6 @@
         'security/ir.model.access.csv', 
         'views/mtnclient.xml',  
         'views/apimtn.xml',
-        'views/paiement.xml',
     ],
     'demo': [],
     'installable' : True,
